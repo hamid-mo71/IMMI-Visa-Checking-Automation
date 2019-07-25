@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IMMI API Client</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@4.1.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container features" id='app'>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3>Enter person's data</h3>
+                <input type="checkbox" name="is_image" v-model="image">
+                <label for="is_image">Use image instead</label>
+                <form method="POST" action="/immi-passport" enctype="multipart/form-data">
+                    <div class="form-group" v-if="image" >
+                        <input class="form-control" type="file" name="image" placeholder="Passport image">
+                    </div>
+                    <div class="form-group" v-if="!image" >
+                        <input class="form-control" v-model="input.given_name" type="text" name="given_name" placeholder="Given name">
+                    </div>
+                    <div class="form-group" v-if="!image" >
+                        <input class="form-control" v-model="input.family_name" type="text" name="family_name" placeholder="Family name">
+                    </div>
+                    <div class="form-group" v-if="!image" >
+                        <input class="form-control" v-model="input.date_of_birth" type="text" name="date_of_birth" placeholder="Date of birth">
+                    </div>
+                    <div class="form-group" v-if="!image" >
+                        <input class="form-control" v-model="input.dash_date_of_birth" type="text" name="dash_date_of_birth" placeholder="DOB with dashes and numbers">
+                    </div>
+                    <div class="form-group" v-if="!image" >
+                        <input class="form-control" v-model="input.document_number" type="text" name="document_number" placeholder="Document Number">
+                    </div>
+                    <div class="form-group" v-if="!image" >
+                        <input class="form-control" v-model="input.document_country" type="text" name="document_country" placeholder="Country of Document">
+                    </div>
+                    <input type="submit" class="btn btn-secondary btn-block" value="Send (HTTP)" name="">
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h2>Using axios</h2>
+                <h3>enquiry details</h3>
+                <p>[[ result ]]</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        var vm = new Vue({
+            el: '#app',
+            delimiters: ['[[', ']]'],
+            data: {
+                image: false,
+                input: {
+                    given_name: 'J',
+                    family_name: 'D',
+                    date_of_birth: '16 December 1969',
+                    dash_date_of_birth: '1969-12-16',
+                    document_number: '505608637',
+                    document_country: 'USA',
+                    image: ''
+                },
+                result: {
+                    enquiry_details: {
+                        family_name: '',
+                        given_names: '',
+                        date_of_birth: '',
+                        document_number: '',
+                        country_of_document: '',
+                    },
+                    current_visa_details: {
+                        category_selected: '',
+                        family_name: '',
+                        given_name: '',
+                        document_number: '',
+                        visa_class_subclass: '',
+                        education_sector: '',
+                        visa_applicant: '',
+                        visa_grant_date: '',
+                        visa_expiry_date: '',
+                        location: '',
+                        work_entitlements: '',
+                        work_conditions: '',
+                    }
+                }
+            },
+        mounted() {
+            var form_data = new FormData()
+            for (item in this.input)
+                form_data.append(item, this.input[item])
+            console.log(this.input)
+            axios
+                .post('http://localhost:8080/immi-passport', form_data)
+                .then(function (response) {
+                    this.result = response
+                })
+        }
+
+        })
+    </script>
+</body>
+</html>

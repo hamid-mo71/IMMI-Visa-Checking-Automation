@@ -1,0 +1,528 @@
+{
+    'AccessDenied': False,
+    'CallbackId': None,
+    'Locked': False,
+    'Message': 'Operation executed successfully.',
+    'SessionExpired': False,
+    'Success': True,
+    'VpeUnreachable': False,
+    'Document': {
+        'AspectRatio': 1.4591836734693877,
+        'Audited': False,
+        'AuditedByUser': None,
+        'AuditorMessage': None,
+        'AuditorStatus': 0,
+        'Blacklisted': False,
+        'BlacklistedAt': None,
+        'BranchName': '',
+        'CompatibilityDocumentSubTypeCode': None,
+        'CompatibilityDocumentTypeCode': None,
+        'CompatibilityIssuingCountryCode': None,
+        'CompatibilityNationalityCode': None,
+        'ContainerId': '76d7213e-4aa5-40fa-bdef-4a975c2bd553',
+        'ContinuedManually': False,
+        'CreatedAt': '/Date(1559564000727+1000)/',
+        'CustomFieldDictionary': [],
+        'CustomFieldKeys': [],
+        'DetectedOrientation': 0,
+        'DocumentCompleted': True,
+        'DocumentConfiguration': {
+            'DisableExpiredEUDocumentsFailure': True
+        },
+        'DocumentFields': [
+            {
+            'DataType': 0,
+            'DescriptionText': None,
+            'DisplayName': 'Document Number',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'FieldValueDate': None,
+            'FieldValueString': 'P30294888',
+            'Id': 7914,
+            'ImageType': None,
+            'Name': 'VI Document Number',
+            'RegionCoordinates': None,
+            'Reliability': 0,
+            'SourceId': 2
+            },
+            {
+            'DataType': 0,
+            'DescriptionText': None,
+            'DisplayName': 'Firstname',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'FieldValueDate': None,
+            'FieldValueString': 'Hamidreza',
+            'Id': 7915,
+            'ImageType': None,
+            'Name': 'VI Firstname',
+            'RegionCoordinates': None,
+            'Reliability': 0,
+            'SourceId': 2
+            },
+            {
+            'DataType': 0,
+            'DescriptionText': None,
+            'DisplayName': 'Surname',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'FieldValueDate': None,
+            'FieldValueString': 'Mohammadiandehkordi',
+            'Id': 7916,
+            'ImageType': None,
+            'Name': 'VI Surname',
+            'RegionCoordinates': None,
+            'Reliability': 0,
+            'SourceId': 2
+            },
+            {
+            'DataType': 1,
+            'DescriptionText': None,
+            'DisplayName': 'Birth Date',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'FieldValueDate': '/Date(704469600000+1000)/',
+            'FieldValueString': None,
+            'Id': 7917,
+            'ImageType': None,
+            'Name': 'VI Birth Date',
+            'RegionCoordinates': None,
+            'Reliability': 0,
+            'SourceId': 2
+            },
+            {
+            'DataType': 0,
+            'DescriptionText': None,
+            'DisplayName': 'Sex',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'FieldValueDate': None,
+            'FieldValueString': 'M',
+            'Id': 7918,
+            'ImageType': None,
+            'Name': 'VI Sex',
+            'RegionCoordinates': None,
+            'Reliability': 0,
+            'SourceId': 2
+            },
+            {
+            'DataType': 1,
+            'DescriptionText': None,
+            'DisplayName': 'Expiration Date',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'FieldValueDate': '/Date(1560002400000+1000)/',
+            'FieldValueString': None,
+            'Id': 7919,
+            'ImageType': None,
+            'Name': 'VI Expiration Date',
+            'RegionCoordinates': None,
+            'Reliability': 0,
+            'SourceId': 2
+            }
+        ],
+        'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+        'DocumentResultsSummary': [
+            {
+            'ErrorMessage': None,
+            'Name': 'General Document Assessments',
+            'Value': True,
+            'ValueUndefined': False
+            },
+            {
+            'ErrorMessage': None,
+            'Name': 'MRZ Validations',
+            'Value': True,
+            'ValueUndefined': False
+            }
+        ],
+        'DocumentSubType': {
+            'DocumentType': 0,
+            'Id': '0',
+            'Mrz': '',
+            'Name': 'None',
+            'RewriteDocumentNumber': 0,
+            'RewriteDocumentType': 0
+        },
+        'DocumentType': 0,
+        'DocumentValidations': [
+            {
+            'ActionsText': None,
+            'DescriptionText': None,
+            'DisplayName': 'MRZ Name Format Valid',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'Id': 9351,
+            'ImageType': None,
+            'InformationText': None,
+            'Name': 'MRZ Name Format Valid',
+            'OutcomeCommentText': None,
+            'RefFieldNames': ['MRZ'
+                ],
+            'RegionCoordinates': None,
+            'Result': 4
+            },
+            {
+            'ActionsText': None,
+            'DescriptionText': None,
+            'DisplayName': 'Issuing State Valid',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'Id': 9352,
+            'ImageType': None,
+            'InformationText': None,
+            'Name': 'Issuing State Valid',
+            'OutcomeCommentText': None,
+            'RefFieldNames': ['MRZ'
+                ],
+            'RegionCoordinates': None,
+            'Result': 4
+            },
+            {
+            'ActionsText': None,
+            'DescriptionText': None,
+            'DisplayName': 'Composite Check Digit',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'Id': 9353,
+            'ImageType': None,
+            'InformationText': None,
+            'Name': 'Composite Check Digit',
+            'OutcomeCommentText': None,
+            'RefFieldNames': ['MRZ'
+                ],
+            'RegionCoordinates': None,
+            'Result': 4
+            },
+            {
+            'ActionsText': None,
+            'DescriptionText': None,
+            'DisplayName': 'Document Number Check Digit',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'Id': 9354,
+            'ImageType': None,
+            'InformationText': None,
+            'Name': 'Document Number Check Digit',
+            'OutcomeCommentText': None,
+            'RefFieldNames': ['MRZ'
+                ],
+            'RegionCoordinates': None,
+            'Result': 4
+            },
+            {
+            'ActionsText': None,
+            'DescriptionText': None,
+            'DisplayName': 'Birth Date Check Digit',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'Id': 9355,
+            'ImageType': None,
+            'InformationText': None,
+            'Name': 'Birth Date Check Digit',
+            'OutcomeCommentText': None,
+            'RefFieldNames': ['MRZ'
+                ],
+            'RegionCoordinates': None,
+            'Result': 4
+            },
+            {
+            'ActionsText': None,
+            'DescriptionText': None,
+            'DisplayName': 'Expiration Date Check Digit',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'Id': 9356,
+            'ImageType': None,
+            'InformationText': None,
+            'Name': 'Expiration Date Check Digit',
+            'OutcomeCommentText': None,
+            'RefFieldNames': ['MRZ'
+                ],
+            'RegionCoordinates': None,
+            'Result': 4
+            },
+            {
+            'ActionsText': None,
+            'DescriptionText': None,
+            'DisplayName': 'Personal Number Check Digit',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'Id': 9357,
+            'ImageType': None,
+            'InformationText': None,
+            'Name': 'Personal Number Check Digit',
+            'OutcomeCommentText': None,
+            'RefFieldNames': ['MRZ'
+                ],
+            'RegionCoordinates': None,
+            'Result': 4
+            },
+            {
+            'ActionsText': None,
+            'DescriptionText': None,
+            'DisplayName': 'Validity Period Valid',
+            'DocumentId': '7e49af6e-b6b7-450e-903d-15fa7455c205',
+            'Id': 9358,
+            'ImageType': None,
+            'InformationText': None,
+            'Name': 'Validity Period Valid',
+            'OutcomeCommentText': None,
+            'RefFieldNames': None,
+            'RegionCoordinates': None,
+            'Result': 0
+            }
+        ],
+        'DocumentVersion': {
+            'AllowIncorrectExtendedDocumentNumber': False,
+            'ChipFields': None,
+            'ChipLocked': False,
+            'ChipValidationFields': None,
+            'Country': {
+                'Alias1': None,
+                'Alias2': None,
+                'Alias3': None,
+                'AltMrz': None,
+                'EU': False,
+                'Mrz': 'IRN',
+                'Name': 'Iran, Islamic
+                Republic of ', '
+                Nationality ': None, '
+                UK ': False
+            }, '
+                DateFormat ': 0, '
+                DocumentSubType ': {'
+                DocumentType ': 0, '
+                Id ': '
+                0 ', '
+                Mrz ': '
+                ', '
+                Name ': '
+                None ', '
+                RewriteDocumentNumber ': 0, '
+                RewriteDocumentType ': 0
+            }, '
+                DocumentType ': 0, '
+                Features ': [], '
+                Id ': '
+                0 ', '
+                Images ': [], '
+                Laminated ': False, '
+                MRZFields ': [], '
+                Mrz ': False, '
+                MrzCharacters ': 0, '
+                MrzLines ': 0, '
+                Name ': '
+                Undefined ', '
+                RFID ': False, '
+                ValidityRules ': None, '
+                Year ': 0
+        }, '
+                DrivingLicenceCategory ': None, '
+                Editable ': True, '
+                ExpiryNotification ': False, '
+                ExternalServices ': [], '
+                ExternalServicesQueried ': False, '
+                FeedbackFace ': None, '
+                FeedbackFeatures ': [], '
+                FeedbackHasMrz ': None, '
+                FeedbackPersonMatches ': None, '
+                FeedbackRFIDImageMatches ': None, '
+                FeedbackUV ': None, '
+                FeedbackUVPattern ': None, '
+                Font ': None, '
+                FontAlignment ': None, '
+                FontHeight ': None, '
+                Forwarded ': False, '
+                GeneralDocumentProperties ': [
+            {'
+                ErrorMessage ': None, '
+                Name ': '
+                Document in date ', '
+                Value ': True, '
+                ValueUndefined ': False
+            },
+            {'
+                ErrorMessage ': None, '
+                Name ': '
+                Document details complete ', '
+                Value ': True, '
+                ValueUndefined ': False
+            }
+        ], '
+                HasError ': False, '
+                HighRiskCountry ': None, '
+                Images ': [
+            {'
+                CreatedAt ': ' / Date(1559564000900 + 1000) / ', '
+                CropArea ': {'
+                BottomLeft ': {'
+                x ': 0, '
+                y ': 0
+                    }, '
+                BottomRight ': {'
+                x ': 0, '
+                y ': 0
+                    }, '
+                TopLeft ': {'
+                x ': 0, '
+                y ': 0
+                    }, '
+                TopRight ': {'
+                x ': 0, '
+                y ': 0
+                    }
+                }, '
+                DocumentId ': '
+                7e49 af6e - b6b7 - 450e-903 d - 15 fa7455c205 ', '
+                Filename ': None, '
+                Id ': '
+                5 f740742 - 5 f0b - 4 a78 - af4a - 7 dd476f76fc6 ', '
+                ImageSourceId ': '
+                95 d8db78 - cd30 - 45 bd - 8 dbd - ed9c725cf932 ', '
+                ImageType ': 2, '
+                Rotation ': 0
+            },
+            {'
+                CreatedAt ': ' / Date(1559564001197 + 1000) / ', '
+                CropArea ': {'
+                BottomLeft ': {'
+                x ': 0, '
+                y ': 0
+                    }, '
+                BottomRight ': {'
+                x ': 0, '
+                y ': 0
+                    }, '
+                TopLeft ': {'
+                x ': 0, '
+                y ': 0
+                    }, '
+                TopRight ': {'
+                x ': 0, '
+                y ': 0
+                    }
+                }, '
+                DocumentId ': '
+                7e49 af6e - b6b7 - 450e-903 d - 15 fa7455c205 ', '
+                Filename ': None, '
+                Id ': '
+                95 d8db78 - cd30 - 45 bd - 8 dbd - ed9c725cf932 ', '
+                ImageSourceId ': None, '
+                ImageType ': 60, '
+                Rotation ': 0
+            }
+        ], '
+                IssuingAuthority ': None, '
+                IssuingCountry ': {'
+                Alias1 ': None, '
+                Alias2 ': None, '
+                Alias3 ': None, '
+                AltMrz ': None, '
+                EU ': False, '
+                Mrz ': '
+                IRN ', '
+                Name ': '
+                Iran,
+                Islamic Republic of ', '
+                Nationality ': None, '
+                UK ': False
+        }, '
+                KDB ': True, '
+                Locked ': False, '
+                MRZCorrected ': True, '
+                MRZCorrectionProvided ': False, '
+                MaxAgeFailed ': None,
+                'MinAgeFailed': None,
+                'MissingFieldsProperties': [],
+                'Mrz': 'P<IRNMOHAMMADIANDEHKORDI<<HAMIDREZA<<<<<<<<<\nP302948887IRN9204292M1906095<<<<<<<<<<<<<<00',
+                'MrzCharacterCount': 44,
+                'MrzImageType': 2,
+                'MrzLineCount': 2,
+                'MrzSameLength': True,
+                'MrzValidationProperties': [
+            {
+                    'ErrorMessage': None,
+                    'Name': 'All MRZ lines have the same length',
+                    'Value': True,
+                    'ValueUndefined': False
+            },
+            {
+                    'ErrorMessage': None,
+                    'Name': 'Valid MRZ codeline length',
+                    'Value': True,
+                    'ValueUndefined': False
+            },
+            {
+                    'ErrorMessage': None,
+                    'Name': 'All characters valid',
+                    'Value': True,
+                    'ValueUndefined': False
+            },
+            {
+                    'ErrorMessage': None,
+                    'Name': 'Overall checksum',
+                    'Value': True,
+                    'ValueUndefined': False
+            },
+            {
+                    'ErrorMessage': None,
+                    'Name': 'Document number checksum',
+                    'Value': True,
+                    'ValueUndefined': False
+            },
+            {
+                    'ErrorMessage': None,
+                    'Name': 'Date of birth checksum',
+                    'Value': True,
+                    'ValueUndefined': False
+            },
+            {
+                    'ErrorMessage': None,
+                    'Name': 'Expiry date checksum',
+                    'Value': True,
+                    'ValueUndefined': False
+            },
+            {
+                    'ErrorMessage': None,
+                    'Name': 'Personal number checksum',
+                    'Value': True,
+                    'ValueUndefined': False
+            },
+            {
+                    'ErrorMessage': None,
+                    'Name': 'Name formatted correctly',
+                    'Value': True,
+                    'ValueUndefined': False
+            },
+            {
+                    'ErrorMessage': None,
+                    'Name': 'Issuing state valid',
+                    'Value': True,
+                    'ValueUndefined': False
+            }
+        ],
+                'Nationality': {
+                    'Alias1': None,
+                    'Alias2': None,
+                    'Alias3': None,
+                    'AltMrz': None,
+                    'EU': False,
+                    'Mrz': 'IRN',
+                    'Name': 'Iran, Islamic Republic of',
+                    'Nationality': None,
+                    'UK': False
+        },
+                'NoInitialFaceImage': True,
+                'Notes': None,
+                'OcrDataApplied': False,
+                'OcrFieldData': [],
+                'OperatorMessage': None,
+                'OperatorStatus': 1,
+                'OriginalMrz': '',
+                'PartiallyRecognised': False,
+                'RFIDFailed': False,
+                'RfidMrz': '',
+                'RuleDenied': False,
+                'ScanCounter': 1,
+                'ScannedAt': '/Date(1559564000727+1000)/',
+                'ScannerType': 'CLOUD',
+                'SeenBeforeDocumentContainerId': '9a80e9d9-7b73-462c-9516-dd742f5f4e3a',
+                'SeenBeforeDocumentId': 'd999442e-04dc-4e9e-af18-0c3a18c3a798',
+                'SupportingDocumentName': None,
+                'Unrecognised': False,
+                'UpdatedAt': '/Date(1559564003213+1000)/',
+                'ValidFrom': None,
+                'ValidLength': True,
+                'VpeDeviceId': None,
+                'VpeName': None,
+                'WizardCompleted': True
+    }
+}
